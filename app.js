@@ -46,7 +46,7 @@ app.post("/", function(req,res){
       const parsedData = JSON.parse(data);
       console.log(parsedData);
 
-      console.log(parsedData.errors[0].error);
+      //console.log(parsedData.errors[0].error);
 
       if(parsedData.error_count == 0 && response.statusCode == 200){
         res.sendFile(__dirname + "/success.html");
